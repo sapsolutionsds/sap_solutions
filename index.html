@@ -184,16 +184,19 @@
 
     /* ── PORTFOLIO CARD ── */
     .port-card {
-      background: #FAFAFA;
-      border: 1.5px solid #D4D4D4;
-      transition: box-shadow .4s, transform .4s cubic-bezier(.16,1,.3,1), border-color .3s;
+      background: #F97316;
+      border: 1.5px solid #C2410C;
+      transition: background .3s, box-shadow .4s, transform .4s cubic-bezier(.16,1,.3,1), border-color .3s;
       overflow: hidden;
     }
     .port-card:hover {
-      box-shadow: 0 32px 80px rgba(0,0,0,.14);
+      background: #FB923C;
+      box-shadow: 0 32px 80px rgba(194,65,12,.28);
       transform: translateY(-6px);
-      border-color: #0A0A0A;
+      border-color: #9A3412;
     }
+    .port-card .text-smoke { color: #431407; }
+    .port-card .port-tag { background: rgba(255,255,255,.28); }
     .port-tag {
       font-family: 'Syne', sans-serif;
       font-size: .65rem;
@@ -301,22 +304,18 @@
 
     <!-- Right: stats -->
     <div class="lg:col-span-5 lg:pl-10">
-      <div class="grid grid-cols-2 gap-0" style="border:1.5px solid #D4D4D4;">
-        <div class="p-8 stat-line border-r" style="border-color:#D4D4D4; border-top:none; border-left:none; border-bottom:none;">
+      <div class="grid md:grid-cols-3 gap-0" style="border:1.5px solid #D4D4D4;">
+        <div class="p-8 stat-line md:border-r" style="border-color:#D4D4D4; border-top:none; border-left:none; border-bottom:none;">
           <p class="font-display font-bold text-ink" style="font-size:2.8rem; line-height:1;">+40</p>
           <p class="font-body text-smoke text-sm mt-2 leading-tight">Proyectos<br/>entregados</p>
         </div>
-        <div class="p-8 stat-line" style="border-top:none;">
+        <div class="p-8 stat-line md:border-r" style="border-color:#D4D4D4; border-top:none;">
           <p class="font-display font-bold text-ink" style="font-size:2.8rem; line-height:1;">98%</p>
           <p class="font-body text-smoke text-sm mt-2 leading-tight">Clientes<br/>satisfechos</p>
         </div>
-        <div class="p-8" style="border-top:1.5px solid #D4D4D4; border-right:1.5px solid #D4D4D4;">
+        <div class="p-8">
           <p class="font-display font-bold text-ink" style="font-size:2.8rem; line-height:1;">3×</p>
           <p class="font-body text-smoke text-sm mt-2 leading-tight">Más ventas<br/>promedio</p>
-        </div>
-        <div class="p-8" style="border-top:1.5px solid #D4D4D4;">
-          <p class="font-display font-bold text-ink" style="font-size:2.8rem; line-height:1;">72h</p>
-          <p class="font-body text-smoke text-sm mt-2 leading-tight">Primera entrega<br/>garantizada</p>
         </div>
       </div>
     </div>
